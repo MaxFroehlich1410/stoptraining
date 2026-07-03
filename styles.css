@@ -49,7 +49,8 @@ a {
 .back-link,
 .button,
 .copy-head,
-.sources {
+.sources,
+.legal-footer {
   display: flex;
   align-items: center;
 }
@@ -186,14 +187,6 @@ p {
   background: #1d1d1d;
 }
 
-.button svg,
-.back-link svg,
-.icon-button svg {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 auto;
-}
-
 .page {
   margin: 0 auto;
   padding: 42px 16px 72px;
@@ -282,15 +275,19 @@ p {
 }
 
 .icon-button {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  padding: 9px 12px;
   background: white;
   color: var(--ink);
   cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
 }
 
 pre {
@@ -326,6 +323,62 @@ pre {
 .sources a {
   color: var(--ink);
   text-underline-offset: 3px;
+}
+
+.legal-footer {
+  justify-content: center;
+  gap: 14px;
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 22px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.page-footer {
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 34px;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.legal-footer a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.legal-footer a:hover,
+.legal-footer a:focus-visible,
+.legal-footer a[aria-current="page"] {
+  color: var(--ink);
+}
+
+.legal-page h1 {
+  max-width: 9ch;
+  font-size: clamp(3rem, 7vw, 5.4rem);
+}
+
+.legal-section {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.legal-section h2 {
+  margin-bottom: 10px;
+}
+
+.legal-section p {
+  max-width: 74ch;
+  margin: 0;
+}
+
+.warning-box {
+  border: 1px solid #d8c28a;
+  border-radius: var(--radius);
+  padding: 18px;
+  background: #fff9e8;
 }
 
 .toast {

@@ -51,9 +51,3 @@ document.querySelectorAll("[data-copy-target]").forEach((button) => {
     }
   });
 });
-
-window.addEventListener("DOMContentLoaded", () => {
-  if (window.lucide) {
-    window.lucide.createIcons();
-  }
-});

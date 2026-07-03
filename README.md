@@ -8,6 +8,7 @@ Eine reduzierte, mobile-freundliche statische Website auf Deutsch mit kurzen Sch
 - Separate Kurzseiten fuer Meta / Instagram und TikTok
 - Einklappbare Copy-ready Mustertexte
 - Dezente Quellenlinks zu Meta, TikTok, Verbraucherzentrale Hamburg und DSGVO-Artikeln
+- Impressum und Datenschutzerklaerung mit Platzhaltern fuer Betreiberangaben
 
 ## Deployment
 
@@ -15,4 +16,4 @@ Die Seite ist statisch und braucht keinen Build-Schritt. Fuer GitHub Pages kann 
 
 ## Hinweis
 
-Stand der Inhalte: 3. Juli 2026, Fokus Deutschland/EU. Kein Rechtsrat. Plattformen koennen Menues und Formulare jederzeit aendern.
+Stand der Inhalte: 3. Juli 2026, Fokus Deutschland/EU. Kein Rechtsrat. Plattformen koennen Menues und Formulare jederzeit aendern. Vor Live-Nutzung muessen die Platzhalter in `impressum.html` und `datenschutz.html` durch echte Betreiberangaben ersetzt werden.
