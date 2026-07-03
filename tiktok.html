@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kurze Anleitung, um bei TikTok der Nutzung deiner Daten fuer KI- und Machine-Learning-Training zu widersprechen."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>TikTok widersprechen | StopTraining</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="StopTraining Startseite">
+        <span class="brand-mark" aria-hidden="true">ST</span>
+        <span>StopTraining</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigation">
+        <a href="meta.html">Meta</a>
+        <a href="tiktok.html" aria-current="page">TikTok</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <a class="back-link" href="./"><i data-lucide="arrow-left" aria-hidden="true"></i>Zurück</a>
+
+      <section class="guide-hero">
+        <p class="kicker">TikTok</p>
+        <h1>Widerspruch bei TikTok einreichen.</h1>
+        <p>Der sauberste Nachweis ist das Privacy Webform. Den App-Schalter kannst du zusätzlich setzen.</p>
+        <div class="action-row">
+          <a class="button button-dark" href="https://www.tiktok.com/legal/report/privacy" target="_blank" rel="noreferrer">
+            <i data-lucide="external-link" aria-hidden="true"></i>
+            Privacy Portal öffnen
+          </a>
+        </div>
+      </section>
+
+      <section class="content-grid" aria-label="Anleitung">
+        <article class="panel">
+          <h2>Privacy Webform</h2>
+          <ol class="steps">
+            <li>Privacy Portal öffnen.</li>
+            <li>„report a privacy concern or exercise my data rights“ wählen.</li>
+            <li>„I want to object to the processing of my data“ auswählen.</li>
+            <li>Mustertext einfügen, absenden, Nachweis sichern.</li>
+          </ol>
+        </article>
+
+        <article class="panel">
+          <h2>In der App</h2>
+          <ol class="steps">
+            <li>Profil öffnen.</li>
+            <li>Einstellungen und Datenschutz → Datenschutz.</li>
+            <li>KI und Datenverwendungen öffnen.</li>
+            <li>Verwendung ablehnen.</li>
+          </ol>
+        </article>
+      </section>
+
+      <details class="details-block">
+        <summary>Mustertext</summary>
+        <div class="copy-head">
+          <span>Für das Webform</span>
+          <button class="icon-button" type="button" data-copy-target="tiktok-template" aria-label="Mustertext kopieren" title="Kopieren">
+            <i data-lucide="copy" aria-hidden="true"></i>
+          </button>
+        </div>
+        <pre id="tiktok-template">I object to the processing of my personal data for the purpose of reviewing, improving, developing, testing or training machine learning models, AI systems, recommendation systems or generative AI features.
+
+This objection includes my User Content, videos, images, audio, comments, captions, hashtags, metadata, profile information, usage information and any public or non-public content linked to my account.
+
+I object under Article 21 GDPR because this processing affects my privacy, personality rights, creative work and control over my likeness and content. Please restrict this processing while my objection is being reviewed and confirm the outcome in writing.</pre>
+      </details>
+
+      <section class="small-note">
+        <h2>Nachweis</h2>
+        <p>Speichere Screenshot, Datum und Bestätigung. Bei mehreren Konten den Vorgang pro Konto wiederholen.</p>
+      </section>
+
+      <footer class="sources">
+        <span>Quellen:</span>
+        <a href="https://www.tiktok.com/legal/page/eea/privacy-policy/en" target="_blank" rel="noreferrer">TikTok Privacy Policy</a>
+        <a href="https://www.tiktok.com/legal/report/privacy" target="_blank" rel="noreferrer">TikTok Privacy Portal</a>
+        <a href="https://www.vzhh.de/themen/telefon-internet/datenschutz/ki-training-bei-meta-co-so-schuetzen-sie-ihre-persoenlichen-daten" target="_blank" rel="noreferrer">Verbraucherzentrale Hamburg</a>
+        <a href="https://gdpr-info.eu/art-21-gdpr/" target="_blank" rel="noreferrer">Art. 21 DSGVO</a>
+      </footer>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

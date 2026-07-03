@@ -1,6 +1,3 @@
-const platformTabs = [...document.querySelectorAll("[data-platform-tab]")];
-const platformPanels = [...document.querySelectorAll("[data-platform-panel]")];
-const platformLinks = [...document.querySelectorAll("[data-select-platform]")];
 const toast = document.querySelector(".toast");
 let toastTimeout;
 
@@ -11,54 +8,22 @@ function showToast(message) {
   clearTimeout(toastTimeout);
   toastTimeout = window.setTimeout(() => {
     toast.classList.remove("is-visible");
-  }, 2200);
+  }, 1800);
 }
 
-function selectPlatform(platform, shouldScroll = false) {
-  platformTabs.forEach((tab) => {
-    const isSelected = tab.dataset.platformTab === platform;
-    tab.classList.toggle("is-active", isSelected);
-    tab.setAttribute("aria-selected", String(isSelected));
-  });
-
-  platformPanels.forEach((panel) => {
-    const isSelected = panel.dataset.platformPanel === platform;
-    panel.classList.toggle("is-active", isSelected);
-    panel.hidden = !isSelected;
-  });
-
-  if (shouldScroll) {
-    document.getElementById(platform)?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+function selectText(target) {
+  const selection = window.getSelection();
+  const range = document.createRange();
+  range.selectNodeContents(target);
+  selection.removeAllRanges();
+  selection.addRange(range);
 }
 
-function fallbackCopy(text) {
-  const field = document.createElement("textarea");
-  field.value = text;
-  field.setAttribute("readonly", "");
-  field.style.position = "fixed";
-  field.style.top = "-999px";
-  field.style.left = "-999px";
-  document.body.appendChild(field);
-  field.select();
+function fallbackCopy(target) {
+  selectText(target);
   const copied = document.execCommand("copy");
-  field.remove();
   return copied;
 }
-
-platformTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const platform = tab.dataset.platformTab;
-    selectPlatform(platform);
-    history.replaceState(null, "", `#${platform}`);
-  });
-});
-
-platformLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    selectPlatform(link.dataset.selectPlatform);
-  });
-});
 
 document.querySelectorAll("[data-copy-target]").forEach((button) => {
   button.addEventListener("click", async () => {
@@ -67,41 +32,24 @@ document.querySelectorAll("[data-copy-target]").forEach((button) => {
 
     const text = target.textContent.trim();
     let copied = false;
-    try {
-      await navigator.clipboard.writeText(text);
-      copied = true;
-    } catch {
-      copied = fallbackCopy(text);
+
+    copied = fallbackCopy(target);
+
+    if (!copied && navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(text);
+        copied = true;
+      } catch {
+        copied = false;
+      }
     }
 
     if (copied) {
-      button.classList.add("is-copied");
-      button.setAttribute("title", "Kopiert");
       showToast("Mustertext kopiert.");
     } else {
-      const selection = window.getSelection();
-      const range = document.createRange();
-      range.selectNodeContents(target);
-      selection.removeAllRanges();
-      selection.addRange(range);
-      showToast("Text markiert. Jetzt kopieren.");
+      showToast("Text markiert.");
     }
-
-    window.setTimeout(() => {
-      button.classList.remove("is-copied");
-      button.setAttribute("title", "Kopieren");
-    }, 1800);
   });
-});
-
-if (location.hash === "#tiktok") {
-  selectPlatform("tiktok");
-}
-
-window.addEventListener("hashchange", () => {
-  if (location.hash === "#meta" || location.hash === "#tiktok") {
-    selectPlatform(location.hash.slice(1));
-  }
 });
 
 window.addEventListener("DOMContentLoaded", () => {

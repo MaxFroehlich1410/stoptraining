@@ -5,299 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Deutsche Schritt-fuer-Schritt-Anleitung, um bei Meta und TikTok der Nutzung oeffentlicher Daten fuer KI-Training zu widersprechen."
+      content="Kurze deutsche Anleitung, um bei Meta und TikTok der Nutzung deiner Daten fuer KI-Training zu widersprechen."
     />
-    <meta name="theme-color" content="#f7fbff" />
-    <title>StopTraining | KI-Training bei Meta und TikTok widersprechen</title>
+    <meta name="theme-color" content="#ffffff" />
+    <title>StopTraining</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="assets/hero-wet-glass.jpg" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="home">
     <header class="site-header">
-      <a class="brand" href="#start" aria-label="StopTraining Start">
+      <a class="brand" href="./" aria-label="StopTraining Startseite">
         <span class="brand-mark" aria-hidden="true">ST</span>
         <span>StopTraining</span>
       </a>
-      <nav class="top-nav" aria-label="Hauptnavigation">
-        <a href="#anleitungen">Anleitungen</a>
-        <a href="#mustertexte">Mustertexte</a>
-        <a href="#quellen">Quellen</a>
-      </nav>
     </header>
 
-    <main id="start">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Stand: 3. Juli 2026 · Fokus Deutschland/EU</p>
-          <h1 id="hero-title">Widersprich KI-Training mit deinen Meta- und TikTok-Daten.</h1>
-          <p class="hero-copy">
-            Wähle eine Plattform und folge der kurzen Anleitung. Du bekommst den offiziellen Weg,
-            den passenden Mustertext und eine Checkliste für den Nachweis.
-          </p>
-          <div class="hero-actions" aria-label="Plattform waehlen">
-            <a class="button primary" href="#meta" data-select-platform="meta">
-              <i data-lucide="camera" aria-hidden="true"></i>
-              Meta / Instagram
-            </a>
-            <a class="button dark" href="#tiktok" data-select-platform="tiktok">
-              <i data-lucide="music-2" aria-hidden="true"></i>
-              TikTok
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="quick-panel" aria-label="Kurzueberblick">
-        <div class="quick-item">
-          <i data-lucide="file-check-2" aria-hidden="true"></i>
-          <div>
-            <strong>Offizielle Formulare nutzen</strong>
-            <span>Ein Story-Post oder Profiltext reicht nicht als Widerspruch.</span>
-          </div>
-        </div>
-        <div class="quick-item">
-          <i data-lucide="copy-check" aria-hidden="true"></i>
-          <div>
-            <strong>Mustertext kopieren</strong>
-            <span>Für TikTok ist der formale DSGVO-Widerspruch der sauberste Nachweis.</span>
-          </div>
-        </div>
-        <div class="quick-item">
-          <i data-lucide="camera" aria-hidden="true"></i>
-          <div>
-            <strong>Nachweis sichern</strong>
-            <span>Screenshot, Bestätigungsmail und Datum aufheben.</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="platform-picker" id="anleitungen" aria-labelledby="picker-title">
-        <div class="section-heading">
-          <p class="eyebrow">Plattform wählen</p>
-          <h2 id="picker-title">Welche Anleitung brauchst du?</h2>
-        </div>
-        <div class="picker-grid" role="tablist" aria-label="Plattformen">
-          <button class="platform-card is-active" type="button" role="tab" aria-selected="true" aria-controls="meta" data-platform-tab="meta">
-            <span class="platform-icon meta-icon"><i data-lucide="camera" aria-hidden="true"></i></span>
-            <span>
-              <strong>Meta</strong>
-              <small>Instagram, Facebook, Threads prüfen</small>
-            </span>
-          </button>
-          <button class="platform-card" type="button" role="tab" aria-selected="false" aria-controls="tiktok" data-platform-tab="tiktok">
-            <span class="platform-icon tiktok-icon"><i data-lucide="music-2" aria-hidden="true"></i></span>
-            <span>
-              <strong>TikTok</strong>
-              <small>App-Schalter plus DSGVO-Webform</small>
-            </span>
-          </button>
-        </div>
-      </section>
-
-      <section class="guide-shell">
-        <article class="guide-panel is-active" id="meta" data-platform-panel="meta" role="tabpanel" aria-labelledby="meta-title">
-          <div class="guide-intro">
-            <div>
-              <p class="eyebrow">Meta · Facebook & Instagram</p>
-              <h2 id="meta-title">So legst du Widerspruch bei Meta ein</h2>
-              <p>
-                Meta nennt für die EU öffentliche Inhalte erwachsener Nutzer und Interaktionen mit Meta AI als mögliche Trainingsdaten. Der Widerspruch muss pro Konto bzw. Dienst geprüft werden.
-              </p>
-            </div>
-            <a class="button outline" href="https://www.facebook.com/help/contact/712876720715583" target="_blank" rel="noreferrer">
-              <i data-lucide="external-link" aria-hidden="true"></i>
-              Facebook-Formular
-            </a>
-            <a class="button outline" href="https://help.instagram.com/contact/767264225370182" target="_blank" rel="noreferrer">
-              <i data-lucide="external-link" aria-hidden="true"></i>
-              Instagram-Formular
-            </a>
-          </div>
-
-          <div class="steps-layout">
-            <div class="step-card">
-              <h3>Instagram-App</h3>
-              <ol class="steps">
-                <li><span>1</span>Instagram öffnen und einloggen.</li>
-                <li><span>2</span>Profil öffnen.</li>
-                <li><span>3</span>Drei Striche oben rechts antippen.</li>
-                <li><span>4</span><strong>Einstellungen</strong> → <strong>Info</strong> → <strong>Datenschutzrichtlinie</strong>.</li>
-                <li><span>5</span>Den verlinkten Begriff <strong>„widersprechen“</strong> antippen.</li>
-                <li><span>6</span>E-Mail-Adresse eintragen, absenden und Bestätigung sichern.</li>
-              </ol>
-            </div>
-
-            <div class="step-card">
-              <h3>Facebook-App / Web</h3>
-              <ol class="steps">
-                <li><span>1</span>Facebook öffnen und einloggen.</li>
-                <li><span>2</span>Profil oder Menü öffnen.</li>
-                <li><span>3</span><strong>Einstellungen & Privatsphäre</strong> → <strong>Einstellungen</strong>.</li>
-                <li><span>4</span>Zur <strong>Datenschutzrichtlinie</strong> scrollen.</li>
-                <li><span>5</span>Auf <strong>„widersprechen“</strong> tippen.</li>
-                <li><span>6</span>E-Mail-Adresse eintragen, absenden und Bestätigung sichern.</li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="note-row">
-            <div class="notice">
-              <i data-lucide="alert-circle" aria-hidden="true"></i>
-              <p>
-                Die alte Frist im Mai 2025 ist vorbei. Ein Widerspruch ist weiterhin möglich, wirkt aber praktisch vor allem für die Zukunft.
-              </p>
-            </div>
-            <div class="notice">
-              <i data-lucide="users" aria-hidden="true"></i>
-              <p>
-                Private Nachrichten mit Freunden/Familie sollen nicht fürs Training genutzt werden, außer du teilst Inhalte aktiv mit Meta-AI-Funktionen.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <article class="guide-panel" id="tiktok" data-platform-panel="tiktok" role="tabpanel" aria-labelledby="tiktok-title" hidden>
-          <div class="guide-intro">
-            <div>
-              <p class="eyebrow">TikTok · DSGVO-Widerspruch</p>
-              <h2 id="tiktok-title">So widersprichst du bei TikTok</h2>
-              <p>
-                TikTok nennt User Content und Metadaten in der EEA/UK/CH-Privacy-Policy. Für einen belastbaren Nachweis nutzt du das Privacy Portal und zusätzlich den App-Schalter.
-              </p>
-            </div>
-            <a class="button outline" href="https://www.tiktok.com/legal/report/privacy" target="_blank" rel="noreferrer">
-              <i data-lucide="external-link" aria-hidden="true"></i>
-              Privacy Portal
-            </a>
-          </div>
-
-          <div class="steps-layout">
-            <div class="step-card wide">
-              <h3>Formaler DSGVO-Weg</h3>
-              <ol class="steps">
-                <li><span>1</span>TikToks <strong>Privacy Portal</strong> öffnen.</li>
-                <li><span>2</span><strong>“I would like to report a privacy concern or exercise my data rights”</strong> wählen.</li>
-                <li><span>3</span>Zum <strong>Global privacy web form</strong> weitergehen.</li>
-                <li><span>4</span>Als Anliegen <strong>“I want to object to the processing of my data”</strong> auswählen.</li>
-                <li><span>5</span>In das Textfeld den TikTok-Mustertext unten einfügen und bei Bedarf anpassen.</li>
-                <li><span>6</span>Absenden, Bestätigung oder Screenshot sichern.</li>
-              </ol>
-            </div>
-
-            <div class="step-card">
-              <h3>Zusätzlicher In-App-Check</h3>
-              <ol class="steps">
-                <li><span>1</span>Profil öffnen.</li>
-                <li><span>2</span><strong>Einstellungen und Datenschutz</strong> öffnen.</li>
-                <li><span>3</span><strong>Datenschutz</strong> antippen.</li>
-                <li><span>4</span><strong>KI und Datenverwendungen</strong> öffnen.</li>
-                <li><span>5</span>Verwendung ablehnen.</li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="note-row">
-            <div class="notice strong">
-              <i data-lucide="shield-check" aria-hidden="true"></i>
-              <p>
-                Empfehlung: Mach beides. Der App-Schalter ist praktisch, das Webform ist aber der bessere belegbare DSGVO-Widerspruch.
-              </p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="templates" id="mustertexte" aria-labelledby="templates-title">
-        <div class="section-heading">
-          <p class="eyebrow">Copy & paste</p>
-          <h2 id="templates-title">Mustertexte</h2>
-        </div>
-
-        <div class="template-grid">
-          <article class="template-card">
-            <div class="template-head">
-              <h3>Meta</h3>
-              <button class="icon-button" type="button" data-copy-target="meta-template" aria-label="Meta-Mustertext kopieren" title="Kopieren">
-                <i data-lucide="copy" aria-hidden="true"></i>
-              </button>
-            </div>
-            <pre id="meta-template">Hiermit widerspreche ich der Verarbeitung meiner personenbezogenen Daten zum Training, Entwickeln oder Verbessern von KI-Modellen bei Meta.
-
-Der Widerspruch umfasst insbesondere öffentliche Beiträge, Kommentare, Bilder, Videos, Reels, Profilinformationen, Interaktionen sowie sonstige von mir erstellte oder mit meinem Konto verknüpfte Inhalte.
-
-Ich widerspreche auf Grundlage von Art. 21 DSGVO, da ich nicht möchte, dass meine persönlichen Inhalte und mein Verhalten für generative KI-Systeme verwendet werden.</pre>
-          </article>
-
-          <article class="template-card">
-            <div class="template-head">
-              <h3>TikTok</h3>
-              <button class="icon-button" type="button" data-copy-target="tiktok-template" aria-label="TikTok-Mustertext kopieren" title="Kopieren">
-                <i data-lucide="copy" aria-hidden="true"></i>
-              </button>
-            </div>
-            <pre id="tiktok-template">I object to the processing of my personal data for the purpose of reviewing, improving, developing, testing or training machine learning models, AI systems, recommendation systems or generative AI features.
-
-This objection includes my User Content, videos, images, audio, comments, captions, hashtags, metadata, profile information, usage information and any public or non-public content linked to my account.
-
-I object under Article 21 GDPR because this processing affects my privacy, personality rights, creative work and control over my likeness and content. Please restrict this processing while my objection is being reviewed and confirm the outcome in writing.</pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="proof-section" aria-labelledby="proof-title">
-        <div>
-          <p class="eyebrow">Nach dem Absenden</p>
-          <h2 id="proof-title">Kurzcheck für deinen Nachweis</h2>
-        </div>
-        <ul class="proof-list">
-          <li><i data-lucide="check" aria-hidden="true"></i>Screenshot der Formularauswahl und des abgesendeten Textes sichern.</li>
-          <li><i data-lucide="check" aria-hidden="true"></i>Bestätigungsmail oder Ticketnummer speichern.</li>
-          <li><i data-lucide="check" aria-hidden="true"></i>Datum notieren. Datenschutzrechte müssen grundsätzlich binnen eines Monats beantwortet werden.</li>
-          <li><i data-lucide="check" aria-hidden="true"></i>Bei mehreren Konten den Vorgang pro Konto wiederholen.</li>
-        </ul>
-      </section>
-
-      <section class="sources" id="quellen" aria-labelledby="sources-title">
-        <div class="section-heading">
-          <p class="eyebrow">Quellen & Hinweis</p>
-          <h2 id="sources-title">Offizielle Links</h2>
-        </div>
-        <div class="source-grid">
-          <a href="https://about.fb.com/news/2025/04/making-ai-work-harder-for-europeans/" target="_blank" rel="noreferrer">
-            <span>Meta Newsroom</span>
-            <i data-lucide="external-link" aria-hidden="true"></i>
+    <main class="home-main">
+      <section class="home-hero" aria-labelledby="home-title">
+        <p class="kicker">Deutschland / EU · Stand 3. Juli 2026</p>
+        <h1 id="home-title">Widersprich KI-Training mit deinen Meta- und TikTok-Daten.</h1>
+        <div class="action-row" aria-label="Plattform waehlen">
+          <a class="button" href="meta.html">
+            <i data-lucide="camera" aria-hidden="true"></i>
+            Meta / Instagram
           </a>
-          <a href="https://www.vzhh.de/themen/telefon-internet/datenschutz/ki-training-bei-meta-co-so-schuetzen-sie-ihre-persoenlichen-daten" target="_blank" rel="noreferrer">
-            <span>Verbraucherzentrale Hamburg</span>
-            <i data-lucide="external-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.tiktok.com/legal/page/eea/privacy-policy/en" target="_blank" rel="noreferrer">
-            <span>TikTok EEA Privacy Policy</span>
-            <i data-lucide="external-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.tiktok.com/legal/report/privacy" target="_blank" rel="noreferrer">
-            <span>TikTok Privacy Portal</span>
-            <i data-lucide="external-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://gdpr-info.eu/art-21-gdpr/" target="_blank" rel="noreferrer">
-            <span>Art. 21 DSGVO</span>
-            <i data-lucide="external-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://gdpr-info.eu/art-12-gdpr/" target="_blank" rel="noreferrer">
-            <span>Art. 12 DSGVO</span>
-            <i data-lucide="external-link" aria-hidden="true"></i>
+          <a class="button button-dark" href="tiktok.html">
+            <i data-lucide="music-2" aria-hidden="true"></i>
+            TikTok
           </a>
         </div>
-        <p class="legal-note">
-          Kein Rechtsrat. Plattformen ändern Menüs und Formulare regelmäßig. Wenn ein Link nicht funktioniert, nutze den beschriebenen App-Pfad oder das jeweilige Datenschutz-/Privacy-Center.
-        </p>
       </section>
     </main>
-
-    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
   </body>
 </html>

@@ -1,14 +1,13 @@
 # StopTraining
 
-Eine helle, mobile-freundliche statische Website auf Deutsch mit Schritt-fuer-Schritt-Anleitungen, um bei Meta und TikTok der Nutzung von Daten fuer KI-Training zu widersprechen.
+Eine reduzierte, mobile-freundliche statische Website auf Deutsch mit kurzen Schritt-fuer-Schritt-Anleitungen, um bei Meta und TikTok der Nutzung von Daten fuer KI-Training zu widersprechen.
 
 ## Inhalt
 
-- Meta-Anleitung fuer Instagram und Facebook
-- TikTok-Anleitung mit Privacy Portal und zusaetzlichem In-App-Check
-- Copy-ready Mustertexte
-- Nachweis-Checkliste
-- Quellenlinks zu Meta, TikTok, Verbraucherzentrale Hamburg und DSGVO-Artikeln
+- Minimaler Einstieg mit zwei Plattform-Buttons
+- Separate Kurzseiten fuer Meta / Instagram und TikTok
+- Einklappbare Copy-ready Mustertexte
+- Dezente Quellenlinks zu Meta, TikTok, Verbraucherzentrale Hamburg und DSGVO-Artikeln
 
 ## Deployment
 
